@@ -1,0 +1,108 @@
+{
+  "report": "03 — Calfus x PlaneSense Opportunity Matrix",
+  "prepared_for": "Calfus CXO Meeting with PlaneSense",
+  "date": "2026-02-24",
+
+  "opportunities": [
+
+    {
+      "id": "OPP-01",
+      "title": "AI-Powered Integrated Operations Center (IOC) Automation",
+      "priority": "HIGH",
+      "calfus_capability": "AI Agents & Products",
+      "planesense_pain": "24/7 IOC is entirely human-staffed — crew scheduling, reservations, weather rerouting, catering, client preferences, slot management. Rapid program expansion (Jetfly, CobaltPass, Sourcing Solution) is compounding coordination load.",
+      "proposed_solution": "Calfus AI agents to automate IOC workflows: intelligent crew-aircraft-trip matching, weather-triggered rerouting suggestions, preference-based auto-configuration, partner flight sourcing (Jetfly/CaptainJet) orchestration. Parallels Calfus AssistIQ for ticket triage.",
+      "business_case": "60+ aircraft, 240+ pilots, 40+ bases, 37,300+ missions/year — even 10% automation of IOC decisions saves significant manual hours and improves response quality at scale.",
+      "entry_point": "Start with a scoped AI proof-of-concept on crew scheduling or weather-triggered rerouting — measurable, bounded, fast ROI.",
+      "buyer": "Kevin Gordon (VP Flight Operations) + Mandar Pendse (CIO)"
+    },
+
+    {
+      "id": "OPP-02",
+      "title": "Oracle Cloud ERP — Multi-Entity Financial Management",
+      "priority": "HIGH",
+      "calfus_capability": "ERP Agent Foundry / Oracle Cloud ERP",
+      "planesense_pain": "PlaneSense is a 30-year-old company with 600 employees, 60+ aircraft, two legal entities (PlaneSense + Atlas Aircraft Center), and a rapidly growing web of international financial relationships (Jetfly hour reconciliation, CaptainJet charter billing, Sourcing Solution external operators). Zero ERP platform mention in all scraped content.",
+      "proposed_solution": "Oracle Cloud ERP implementation covering: fractional share asset management, owner billing (management fees + hourly), intercompany reconciliation (PlaneSense ↔ Atlas), partner billing (Jetfly, CaptainJet), multi-currency international transactions, maintenance cost allocation, fleet depreciation tracking.",
+      "business_case": "Three new product lines in 2025 + two new international partnerships + West Coast expansion = finance team complexity growing exponentially. Inability to reconcile cross-entity and cross-border financials cleanly is a real risk at this scale.",
+      "entry_point": "Lead with financial complexity of Jetfly partnership — 'How are you currently reconciling cross-border fractional hours and billing between your owners and Jetfly owners?' This surfaces the gap naturally.",
+      "buyer": "Jim Citro (CFO) + George Antoniadis (CEO for final approval)"
+    },
+
+    {
+      "id": "OPP-03",
+      "title": "Predictive Maintenance & Fleet Intelligence Platform",
+      "priority": "HIGH",
+      "calfus_capability": "AI Agents + Data & Intelligence",
+      "planesense_pain": "60+ aircraft fleet, 194,000+ parts inventory, two maintenance facilities, documented parts supply chain vulnerabilities ('shipping delays impacting return-to-service'). Fleet-wide upgrade programs simultaneously underway. FAA Diamond Award compliance requires zero-defect documentation.",
+      "proposed_solution": "AI-driven predictive maintenance layer for Atlas Aircraft Center: component lifecycle forecasting, parts demand prediction, supplier lead time optimization, technician scheduling, maintenance window sequencing to minimize aircraft downtime, compliance documentation automation.",
+      "business_case": "A single aircraft out of service for an unplanned maintenance event disrupts owner scheduling guarantees. With 60+ aircraft and a 91% retention rate as the brand promise, unplanned downtime is a direct revenue and reputation risk. Predictive maintenance directly protects that promise.",
+      "entry_point": "Atlas Aircraft Center is a separate legal entity — this can be a standalone engagement independent of the main PlaneSense conversation.",
+      "buyer": "Todd Smith (Director of Airworthiness) + Atlas leadership"
+    },
+
+    {
+      "id": "OPP-04",
+      "title": "Owner Digital Experience Platform",
+      "priority": "MEDIUM-HIGH",
+      "calfus_capability": "Software Engineering & Product Development",
+      "planesense_pain": "Owner mobile app confirmed (basic scheduling only). No owner portal described — no self-service for trip history, invoices, preference management, or digital onboarding. West Coast expansion and Jetfly partnership are bringing in new owner profiles who expect modern digital experiences.",
+      "proposed_solution": "Full-stack owner experience platform: enhanced mobile app (real-time flight tracking, intelligent scheduling with conflict detection, preference management), web portal (digital invoicing, flight history, share management, document access), onboarding flow for new owners, integrated with HubSpot (existing CRM).",
+      "business_case": "91% retention is driven by service quality — but modern clients increasingly benchmark their experience against consumer apps (Uber, Delta app, etc.). Keeping pace digitally is a retention and acquisition competitive advantage, especially for the younger-generation owners being recruited.",
+      "entry_point": "'What does your owner app currently support, and what are your plans to expand it?' — lets them identify the gap themselves.",
+      "buyer": "Mandar Pendse (CIO) + Danielle McPheters (Director, Account Services)"
+    },
+
+    {
+      "id": "OPP-05",
+      "title": "Data Intelligence & Operational Analytics",
+      "priority": "MEDIUM-HIGH",
+      "calfus_capability": "Data & Intelligence",
+      "planesense_pain": "Massive operational data generated (37K+ missions/year, 1,343 airports, fleet telemetry, maintenance records, pilot performance, weather events, client preferences, pricing data) with zero visible analytics layer. CobaltPass sold out — suggests demand forecasting gap. No mention of BI tools, dashboards, or data-driven decision making in any content.",
+      "proposed_solution": "Unified data intelligence platform: operational dashboards (fleet utilization, mission completion rates, IOC performance), revenue analytics (owner segment profitability, program mix, pricing optimization), demand forecasting (CobaltPass inventory, seasonal peaks), pilot performance analytics, maintenance cost intelligence.",
+      "business_case": "CobaltPass selling out within months of launch signals unmet demand they cannot currently quantify or plan for. A data layer would directly improve capacity planning, pricing decisions, and product development cadence.",
+      "entry_point": "'How do you currently forecast demand for CobaltPass seats — and how did you arrive at the initial inventory size?' This surfaces the forecasting gap directly.",
+      "buyer": "Mandar Pendse (CIO) + Jim Citro (CFO for revenue analytics)"
+    },
+
+    {
+      "id": "OPP-06",
+      "title": "AssistIQ for Pilot & Operations Support Triage",
+      "priority": "MEDIUM",
+      "calfus_capability": "AssistIQ (AI-powered ticket triage & resolution)",
+      "planesense_pain": "IOC supports pilots from takeoff to landing, 24/7. Owner inquiries, maintenance tickets, flight changes, and weather events all generate support volume simultaneously. No visible ticketing or triage system mentioned.",
+      "proposed_solution": "Deploy Calfus AssistIQ to: triage IOC support requests by urgency/type, automate common owner inquiry responses (flight status, billing questions, program details), route complex issues to right specialist, continuously learn from resolutions to improve efficiency.",
+      "business_case": "As PlaneSense adds CobaltPass, Sourcing Solution, and Jetfly coordination, IOC support volume will grow non-linearly. AssistIQ contains that cost growth while improving response time — a direct retention-quality play.",
+      "entry_point": "Reference AssistIQ by name with the Oracle connection — 'We have a product called AssistIQ originally built for Oracle support operations that has direct parallels to aviation IOC operations.'",
+      "buyer": "Kevin Gordon (VP Flight Operations) + Mandar Pendse (CIO)"
+    },
+
+    {
+      "id": "OPP-07",
+      "title": "Jetfly / Partner Integration Layer",
+      "priority": "MEDIUM",
+      "calfus_capability": "Software Engineering + Data & Intelligence",
+      "planesense_pain": "Jetfly partnership (April 2025) requires seamless scheduling, flight hour reconciliation, and client experience continuity between two independent organizations operating in different regulatory jurisdictions. CaptainJet adds a third integration point. Currently described with no technology infrastructure detail — likely being managed manually.",
+      "proposed_solution": "API integration layer connecting PlaneSense IOC and owner systems with Jetfly scheduling and Calfus/CaptainJet sourcing workflows. Automated cross-border flight hour tracking, reconciliation, and billing. Unified client experience regardless of which partner operates the flight.",
+      "business_case": "The Jetfly partnership was launched in April 2025 — it is less than a year old and being managed at scale manually. As usage grows, manual reconciliation will break down. Building the integration now is far cheaper than fixing a crisis later.",
+      "entry_point": "'Who is your current technology contact at Jetfly, and how are you tracking cross-fleet flight hours today?' — immediately surfaces whether there is a system or not.",
+      "buyer": "Mike Baur (VP Business Development & Strategy) + Mandar Pendse (CIO)"
+    }
+  ],
+
+  "priority_ranking": [
+    "OPP-01: IOC AI Automation — immediate pain, visible complexity, daily operational impact",
+    "OPP-02: Oracle Cloud ERP — strategic, CFO-level, Jetfly is the perfect entry wedge",
+    "OPP-03: Predictive Maintenance (Atlas) — standalone Atlas engagement, separate buyer",
+    "OPP-04: Owner Digital Platform — software engineering, retention play, CIO-driven",
+    "OPP-05: Data Intelligence — analytics layer, underpins all other opportunities",
+    "OPP-06: AssistIQ IOC Triage — product demo opportunity, fast to show value",
+    "OPP-07: Jetfly Integration — immediate and growing, but depends on Jetfly cooperation"
+  ],
+
+  "recommended_meeting_focus": [
+    "Lead with OPP-01 (IOC automation) and OPP-03 (Atlas maintenance) to show operational understanding",
+    "Pivot to OPP-02 (ERP / Jetfly billing) to surface financial complexity",
+    "Close with OPP-06 (AssistIQ demo offer) as a fast, concrete next step"
+  ]
+}

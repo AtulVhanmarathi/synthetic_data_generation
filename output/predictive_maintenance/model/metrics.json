@@ -1,0 +1,25 @@
+{
+  "failure_50h": {
+    "roc_auc": 0.9932,
+    "pr_auc": 0.9386,
+    "cv_auc_mean": 0.9889,
+    "cv_auc_std": 0.0073
+  },
+  "failure_100h": {
+    "roc_auc": 0.9915,
+    "pr_auc": 0.9702,
+    "cv_auc_mean": 0.9869,
+    "cv_auc_std": 0.0036
+  },
+  "rul_regressor": {
+    "mae": 482.9,
+    "rmse": 912.6,
+    "r2": 0.7906
+  },
+  "dataset": {
+    "n_train": 633,
+    "n_test": 159,
+    "fail_50h_rate": 0.0808,
+    "fail_100h_rate": 0.2008
+  }
+}

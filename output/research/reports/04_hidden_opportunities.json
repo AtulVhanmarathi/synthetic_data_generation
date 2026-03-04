@@ -1,0 +1,72 @@
+{
+  "report": "04 — Hidden Opportunities (What PlaneSense May Not See)",
+  "prepared_for": "Calfus CXO Meeting with PlaneSense",
+  "date": "2026-02-24",
+  "framing": "These are opportunities PlaneSense is not currently pursuing or discussing publicly. Presenting these in a CXO meeting signals strategic depth and positions Calfus as a thought partner, not just a vendor.",
+
+  "hidden_opportunities": [
+
+    {
+      "id": "HID-01",
+      "title": "The PC-12 NGX Level D Simulator as a Commercial Revenue Center",
+      "opportunity": "PlaneSense launched the world's first Pilatus PC-12 NGX Level D Full Motion Simulator in February 2025. This is the highest FAA certification level. Currently positioned as an internal pilot training asset. No other operator has this simulator.",
+      "hidden_angle": "This simulator is a global monopoly for Pilatus PC-12 NGX Level D training. Airlines, fractional operators, cargo operators, and medevac services worldwide that fly the PC-12 NGX have no other Level D simulator option. PlaneSense could open this simulator to third-party commercial bookings — generating significant ancillary revenue with near-zero marginal cost.",
+      "calfus_role": "Simulator booking and scheduling platform, commercial training center operations management, revenue analytics for third-party training yield — a greenfield software engagement.",
+      "conversation_starter": "'Are you aware that your PC-12 NGX Level D simulator may be the only one in the world accessible to third-party operators? Have you modeled the revenue opportunity of commercial third-party training?'"
+    },
+
+    {
+      "id": "HID-02",
+      "title": "Flight Data Monetization & Operational Intelligence Product",
+      "opportunity": "PlaneSense has 30 years of flight data: 591,000+ flight hours, 37,300+ annual missions, 1,343 airports, weather patterns, runway performance, maintenance cycles, fuel efficiency, seasonal demand. This data corpus is unique and has no visible analytics layer.",
+      "hidden_angle": "This data has value beyond internal operations. Aggregate, anonymized flight pattern data has commercial value to: airport authorities (traffic forecasting), weather services (turboprop-specific data), Pilatus Aircraft (OEM performance analytics), insurance companies (risk modeling), and regional economic development bodies. A data intelligence product monetizes an asset that currently goes unused.",
+      "calfus_role": "Data platform architecture, anonymization and compliance framework, analytics product development, potential SaaS offering to sell insights to aviation ecosystem players.",
+      "conversation_starter": "'What do you currently do with your 30 years of flight telemetry and mission data beyond internal reporting?'"
+    },
+
+    {
+      "id": "HID-03",
+      "title": "AI-Driven Dynamic Pricing for CobaltPass",
+      "opportunity": "CobaltPass sold out within months of its May 2025 launch. The product is priced as a fixed block (25 hours prepaid). Demand clearly exceeds supply at current pricing.",
+      "hidden_angle": "Dynamic pricing based on route demand, season, aircraft availability, and advance booking window would allow PlaneSense to: (a) capture revenue premium during peak demand periods, (b) fill low-demand windows at optimized rates, (c) inform fleet capacity investment decisions, and (d) relaunch CobaltPass with a sustainable pricing model that doesn't sell out immediately but still maximizes yield.",
+      "calfus_role": "AI-driven dynamic pricing engine for CobaltPass, demand forecasting model, pricing analytics dashboard for revenue management.",
+      "conversation_starter": "'CobaltPass sold out quickly — that's a pricing signal, not just a demand signal. Are you managing CobaltPass pricing dynamically, or was it set at launch and held?'"
+    },
+
+    {
+      "id": "HID-04",
+      "title": "Predictive Owner Churn & Upsell Scoring",
+      "opportunity": "PlaneSense has a 91% retention rate — but that 9% churn, on a high-value fractional share program, likely represents millions in annual lost revenue. They have rich behavioral data per owner (flight frequency, routes, seasons, preferences, support interactions) but no visible CRM intelligence layer beyond HubSpot marketing automation.",
+      "hidden_angle": "AI-powered churn prediction model: identify owners whose usage patterns signal risk of non-renewal (declining flight frequency, more weather disruptions in their primary routes, no European travel after Jetfly launch). Equally, identify upsell signals — owners who consistently book at max hours (ready for a larger share) or who book a lot of short trips (PC-12 to PC-24 upgrade candidates).",
+      "calfus_role": "Owner behavioral analytics on top of HubSpot + IOC data, churn prediction model, upsell scoring engine, sales team recommendation dashboard.",
+      "conversation_starter": "'Of the ~9% of owners who don't renew — do you know why they leave before they tell you?'"
+    },
+
+    {
+      "id": "HID-05",
+      "title": "Fractional Marketplace — Secondary Share Trading Platform",
+      "opportunity": "Fractional share ownership is a 5-7 year commitment at significant capital investment. Owners who need to exit before contract end currently have limited options (negotiated buyback, transfer). No mention of any secondary market mechanism anywhere in PlaneSense content.",
+      "hidden_angle": "A curated digital marketplace where existing PlaneSense owners can list and sell shares to pre-qualified buyers — vetted by PlaneSense, operated on PlaneSense's platform — would: (a) reduce friction for owners who need to exit, improving retention of those who stay; (b) generate transaction fees for PlaneSense; (c) attract new owners who can buy at a lower entry price; (d) deepen owner community and brand loyalty.",
+      "calfus_role": "Marketplace platform development, buyer qualification workflow, share transfer compliance automation, digital transaction management.",
+      "conversation_starter": "'For owners who need to exit mid-contract — what does that process look like today, and have you thought about creating a structured secondary market?'"
+    },
+
+    {
+      "id": "HID-06",
+      "title": "Jetfly as a Trojan Horse for Global Fractional Expansion",
+      "opportunity": "The Jetfly partnership gives PlaneSense US owners access to European Pilatus aircraft. Jetfly has 400+ European owners. Combined, they represent the world's largest Pilatus fractional community.",
+      "hidden_angle": "PlaneSense + Jetfly could launch a unified global fractional brand — or a joint technology platform — that creates a seamless cross-Atlantic ownership experience. This would be the first truly global Pilatus-exclusive fractional program. The combined fleet, owner base, and airport network would create competitive moats that no single-continent competitor could match.",
+      "calfus_role": "Joint platform architecture, global owner management system, cross-border billing and compliance framework, unified digital experience for PlaneSense + Jetfly owners.",
+      "conversation_starter": "'Have you and the Jetfly leadership team discussed a deeper technology integration, or is the partnership currently purely operational (flight hour exchange)?'"
+    },
+
+    {
+      "id": "HID-07",
+      "title": "Calfus as PlaneSense's Technology Partner in the Aviation Industry",
+      "opportunity": "PlaneSense has a 30-year relationship with Pilatus, is the world's largest Pilatus operator, and is the global launch customer for the PC-24. They have deep credibility across the entire Pilatus operator ecosystem (Jetfly, other fractional programs, corporate Pilatus operators).",
+      "hidden_angle": "Calfus products built for PlaneSense (IOC AI agents, maintenance platform, owner app, ERP) could be productized and offered to other Pilatus operators globally through PlaneSense's ecosystem relationships. PlaneSense becomes a co-innovator and channel partner — not just a customer. This is a partnership model that transforms the BD conversation from 'here's what we can sell you' to 'here's how we grow together.'",
+      "calfus_role": "Joint product development, go-to-market partnership, PlaneSense as reference customer and ecosystem anchor for Calfus aviation vertical.",
+      "conversation_starter": "'Beyond PlaneSense itself — as the world's largest Pilatus operator with deep relationships across the global Pilatus community, have you ever thought about the role technology could play in strengthening those industry relationships?'"
+    }
+  ]
+}

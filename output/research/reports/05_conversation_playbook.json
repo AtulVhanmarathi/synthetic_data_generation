@@ -1,0 +1,104 @@
+{
+  "report": "05 — CXO Meeting Conversation Playbook",
+  "prepared_for": "Calfus representative meeting PlaneSense CXO",
+  "date": "2026-02-24",
+  "format": "Use this as a cheat sheet during the meeting. Do not read from it — internalize the key threads and use them to steer naturally.",
+
+  "meeting_context": {
+    "type": "First casual meeting — exploratory, not a pitch",
+    "tone": "Curious, informed, peer-to-peer — NOT a sales presentation",
+    "goal": "Establish credibility, surface their real priorities, identify 1-2 specific opportunities to explore deeper in a follow-up",
+    "your_advantage": "You know more about their business than they expect you to. Use this to show curiosity, not to lecture."
+  },
+
+  "opening_move": {
+    "objective": "Establish you've done your homework without seeming like you memorized a fact sheet",
+    "approach": "Open with a genuine observation about their recent milestone, then transition to curiosity about where they're headed",
+    "example": "'Congratulations on the 30th anniversary — and the Kenn Ricci award for George earlier this month. What's striking from the outside is how much PlaneSense has compressed into a single year: CobaltPass, Sourcing Solution, Jetfly, CaptainJet, the Level D simulator. That's a lot of new surface area. What does that feel like operationally from inside the organization?'",
+    "why_it_works": "It shows deep research. It asks an open question about operational stress — which is exactly where Calfus can help. It lets them tell you what's hard."
+  },
+
+  "discovery_questions": [
+    {
+      "id": "Q1",
+      "question": "You launched three major new products in 2025 — CobaltPass, Sourcing Solution, and Jetfly. How are you managing the operational coordination behind those with your existing team and systems?",
+      "listen_for": "Manual processes, system gaps, headcount growth as the only answer, frustration with coordination overhead",
+      "pivot_to": "OPP-01 (IOC automation) or OPP-02 (ERP)"
+    },
+    {
+      "id": "Q2",
+      "question": "CobaltPass sold out quickly — which is a great problem to have. How did you arrive at the initial inventory, and how are you thinking about the next tranche?",
+      "listen_for": "Gut feel vs. data-driven answer, demand forecasting process (or lack of), pricing methodology",
+      "pivot_to": "OPP-05 (data intelligence), HID-03 (dynamic pricing)"
+    },
+    {
+      "id": "Q3",
+      "question": "The Jetfly partnership is exciting — but how are you currently handling the cross-border flight hour reconciliation and billing between your owners and their owners?",
+      "listen_for": "Manual spreadsheets, email, no system yet, reliance on Jetfly's system",
+      "pivot_to": "OPP-02 (ERP multi-entity), OPP-07 (Jetfly integration)"
+    },
+    {
+      "id": "Q4",
+      "question": "Atlas Aircraft Center runs the maintenance for 60+ aircraft across two facilities. With the parts supply chain challenges you've publicly noted — how are you managing parts forecasting and inventory today?",
+      "listen_for": "Manual tracking, reactive procurement, no predictive capability, system limitations",
+      "pivot_to": "OPP-03 (predictive maintenance)"
+    },
+    {
+      "id": "Q5",
+      "question": "Your owner app is clearly valued — one of your owners specifically called out 'the professionalism of the app' in a testimonial. What's your roadmap for expanding that digital experience as you grow, especially for the new West Coast owners coming in?",
+      "listen_for": "Current limitations, lack of roadmap, backlog of owner requests, no dedicated product team",
+      "pivot_to": "OPP-04 (owner digital platform)"
+    },
+    {
+      "id": "Q6",
+      "question": "The PC-12 NGX Level D simulator — world's first. Are you opening that to third-party operators, or is it exclusively internal?",
+      "listen_for": "Not considered yet, or early stages — opens the HID-01 commercial revenue conversation",
+      "pivot_to": "HID-01 (simulator as revenue center)"
+    }
+  ],
+
+  "calfus_positioning_lines": {
+    "when_asked_what_calfus_does": "We're an AI-first technology company — we work at the intersection of AI agents, enterprise platforms like Oracle, and software engineering. We've built products like AssistIQ that started in Oracle support automation and are now applied in complex 24/7 operations environments. We're early in understanding aviation, but the problems we solve — scheduling intelligence, multi-entity financials, predictive operations, digital experience — are very familiar patterns.",
+    "when_asked_about_aviation_experience": "Honest answer: aviation operations are new territory for us. But the underlying problems — managing 60+ complex assets, 240 people in shift rotations, real-time dispatch with external partners, financial reconciliation across entities — those are problems we've solved in other industries. We'd want to learn from you about what's aviation-specific before proposing anything.",
+    "when_asked_for_a_proposal": "We'd rather earn a scoped discovery engagement first — spend a few weeks with your IOC and Atlas teams to understand how operations actually run before proposing anything. Bad proposals come from not understanding the real system."
+  },
+
+  "talking_points_by_topic": {
+    "on_their_operational_scale": "60+ aircraft, 240+ pilots, 40+ bases, 24/7 IOC, two maintenance facilities, three new product lines, two European partnerships — all added in roughly 18 months. That's a different company than PlaneSense was in 2023.",
+    "on_their_safety_culture": "The ARGUS Platinum Elite held continuously since 2016 — only five U.S. aviation companies have that. The FAA Diamond Award every year since 2002. That tells you something about how the organization is wired: documentation and compliance are core values, not overhead. Any technology you introduce needs to serve that culture, not fight it.",
+    "on_atlas_aircraft_center": "Atlas isn't just a maintenance shop — it's a separate legal entity, a specialized workforce, a supply chain operation, and a compliance machine. The Calfus conversation with Atlas can run independently from the PlaneSense flight operations conversation. Different buyer, different problems.",
+    "on_the_cio": "Mandar Pendse as CIO is a relatively senior title for an aviation company of this size. That suggests PlaneSense already recognizes technology as a strategic function — you are not selling into a technology-skeptical organization."
+  },
+
+  "objection_handling": {
+    "we_already_have_systems_in_place": "That's expected — 30-year-old companies don't run on nothing. What we've found is that the real question isn't 'do you have systems' but 'are your systems growing with you.' Given everything you've launched in the past 18 months, that's worth an honest look.",
+    "we_dont_have_budget_for_this": "Understood — and we're not here to present a budget. We're here to understand the problems first. If there's a real fit, we can structure something that starts small and proves value before a larger commitment.",
+    "we_work_with_our_own_tech_team": "That's ideal. We work best alongside internal teams, not instead of them. Your CIO knows PlaneSense better than we ever will — our role is to bring capability and scale he doesn't have to build from scratch.",
+    "we_are_focused_on_growth_right_now_not_systems": "Growth without systems creates the debt you'll pay later. The Jetfly billing issue is a good example — it's manageable today, but 400 European owners sharing hours with 300+ US owners is a reconciliation problem that gets expensive fast without the right infrastructure."
+  },
+
+  "close_the_meeting": {
+    "objective": "Leave with a concrete next step — not a vague 'let's stay in touch'",
+    "preferred_ask": "A 2-hour discovery session with the IOC team and Mandar Pendse to understand the current operational stack",
+    "alternative_ask": "A demo of Calfus AssistIQ applied to an IOC scenario — take one of their typical peak-day coordination challenges and show what AI triage could look like",
+    "closing_line": "'We've done a lot of research on PlaneSense before this meeting — but research from the outside only goes so far. The thing I'd most value is 2 hours with your IOC team to see the real system in motion. Would that be something Mandar would be open to?'"
+  },
+
+  "names_to_use_in_conversation": {
+    "show_you_know_the_team": [
+      "George Antoniadis (Founder/CEO) — Kenn Ricci award February 4th",
+      "Mandar Pendse (CIO) — your primary technology contact",
+      "Jim Citro (CFO) — financial systems conversation",
+      "Kevin Gordon (VP Flight Operations) — IOC and crew systems",
+      "Mike Baur (VP BD & Strategy) — likely your host in this meeting"
+    ]
+  },
+
+  "things_to_avoid": [
+    "Do NOT lead with a pitch deck or product brochure",
+    "Do NOT mention Oracle ERP as the first thing — surface the financial complexity problem first, then Oracle becomes the logical answer",
+    "Do NOT oversell AI — PlaneSense's culture is safety and compliance first; AI has to earn trust in that culture",
+    "Do NOT propose a large engagement scope in the first meeting — start small, scoped, low-risk",
+    "Do NOT pretend Calfus has deep aviation experience — honest positioning builds more trust"
+  ]
+}

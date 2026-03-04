@@ -1,0 +1,19 @@
+{
+  "churn": {
+    "roc_auc": 0.9531,
+    "pr_auc": 0.6667,
+    "cv_auc_mean": 0.9695,
+    "cv_auc_std": 0.019
+  },
+  "upsell": {
+    "roc_auc": 0.9784,
+    "pr_auc": 0.9482,
+    "cv_auc_mean": 0.979,
+    "cv_auc_std": 0.0152
+  },
+  "dataset": {
+    "n_owners": 350,
+    "churn_rate": 0.0914,
+    "upsell_rate": 0.1371
+  }
+}

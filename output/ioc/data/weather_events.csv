@@ -1,0 +1,5 @@
+event_id,type,severity,affected_area,valid_from,valid_to,description,affects_airports,recommended_action
+WX-001,SIGMET,MODERATE,Northeast corridor KBOS-KEWR-KPHL,2025-12-20 07:00,2025-12-20 15:00,"Moderate icing FL080-FL180 along northeast corridor; IMC conditions at KBOS, KEWR. Expect delays 30-60 min.","KBOS,KEWR,KPHL,KBWI,KLGA","File alternate, carry extra fuel, consider 2h delay"
+WX-002,PIREP,LIGHT,KBVU departure corridor FL120-FL200,2025-12-20 08:00,2025-12-20 12:00,Light turbulence FL120-FL200 west of BVU departures. Smooth above FL200.,"KBVU,KLAS",Plan cruise above FL200 or accept light chop
+WX-003,METAR,LOW_VIS,KPSM ground operations,2025-12-20 06:00,2025-12-20 10:00,"KPSM: BKN003 OVC006 BR, visibility 1/2SM. IFR conditions. Expect Cat I ILS approaches.",KPSM,Delay departures by 90 min or file IFR with Cat I alternate
+WX-004,NOTAM,INFO,KATL ground delay program,2025-12-20 10:00,2025-12-20 18:00,KATL GDP in effect due to holiday volume. Avg ground delay 45 min for arrivals.,KATL,"Request EDCT, advise owner of potential delay"

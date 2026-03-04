@@ -1,0 +1,86 @@
+{
+  "report": "02 — Pain Points & Operational Gaps",
+  "prepared_for": "Calfus CXO Meeting with PlaneSense",
+  "date": "2026-02-24",
+  "note": "Pain points inferred from content patterns, product launches, testimonials, and operational descriptions. Not all explicitly stated by PlaneSense — some are deduced from business context.",
+
+  "confirmed_pain_points": {
+
+    "parts_supply_chain_vulnerability": {
+      "severity": "HIGH",
+      "evidence": "PlaneSense's own content explicitly states: 'The availability of aircraft parts and shipping delays are impacting the ability to repair and return aircraft to service in a timely manner. Parts are increasingly more costly.' This is documented against a fleet of 60+ aircraft on continuous acquisition/retirement cycles.",
+      "implication_for_calfus": "Parts inventory management, demand forecasting, supplier management — ERP and AI-driven predictive procurement opportunity at Atlas Aircraft Center"
+    },
+
+    "demand_exceeding_capacity": {
+      "severity": "HIGH",
+      "evidence": "CobaltPass jet card launched May 2025 — sold out by February 2026. PlaneSense launched a dedicated 'Sourcing Solution' team in August 2025 specifically to handle demand beyond their own fleet. Article: 'The total number of available flights is down ten percent, causing costs to escalate dramatically.'",
+      "implication_for_calfus": "Demand forecasting AI to optimize share sales and capacity allocation; dynamic inventory management for CobaltPass; fleet sizing optimization"
+    },
+
+    "operational_scaling_without_tech_foundation": {
+      "severity": "HIGH",
+      "evidence": "Three major product/program launches in a single year (2025): Jetfly partnership, CobaltPass, Sourcing Solution. Plus: West Coast expansion with tripled Boulder City facility, PC-12 NGX simulator launch, European CaptainJet partnership, fleet-wide galley retrofit program. All of this on top of ~600 employees, 240+ pilots, 60+ aircraft, 40+ bases — with no visible enterprise technology layer.",
+      "implication_for_calfus": "Classic growth-induced ERP need. Company outgrowing manual and fragmented systems. Oracle Cloud ERP with Calfus ERP Agent Foundry is a high-fit engagement."
+    },
+
+    "24_7_operations_center_human_dependency": {
+      "severity": "HIGH",
+      "evidence": "The Integrated Operations Center (IOC) handles: reservations, crew scheduling, flight planning, weather monitoring, maintenance coordination, slot management for events, catering, and client preference management — 24/7/365 for all owners. This is explicitly described as a human team operation.",
+      "implication_for_calfus": "AI agent automation for IOC workflows — scheduling, crew assignment, weather-triggered rerouting, preference-based personalization. Direct parallel to Calfus AssistIQ for ticket triage and resolution."
+    },
+
+    "cross_entity_billing_and_reconciliation": {
+      "severity": "MEDIUM-HIGH",
+      "evidence": "Jetfly partnership requires cross-border flight hour reconciliation between two independent organizations (US + European Pilatus fractional programs) in different regulatory jurisdictions. CaptainJet adds a third-party charter billing layer. Sourcing Solution adds variable external operator billing. PlaneSense + Atlas Aircraft Center are two legal entities sharing a facility and fleet.",
+      "implication_for_calfus": "Multi-entity, multi-currency ERP financial management — intercompany billing, partner revenue sharing, international compliance. Oracle Cloud is purpose-built for this."
+    },
+
+    "pilot_scheduling_and_compliance_complexity": {
+      "severity": "MEDIUM-HIGH",
+      "evidence": "240+ pilots, 40+ reporting bases, 7-on/7-off cycles, merit-based advancement, dual PC-24 upgrade criteria (merit + PC-12 captain seniority), vacation tiers, rest policies exceeding FAA minimums, annual recurrent training tracking, base assignment preferences — all described in detail. FAR Part 91 Subpart K compliance requirements for all flights.",
+      "implication_for_calfus": "HR and crew management automation — scheduling, compliance tracking, training records management. Integration with ADP (existing) and a broader crew management system."
+    },
+
+    "maintenance_tracking_at_scale": {
+      "severity": "MEDIUM-HIGH",
+      "evidence": "Atlas Aircraft Center manages 194,000+ parts inventory, two facilities (Portsmouth NH, Boulder City NV), two shifts 7 days/week, factory-trained technicians with 18,000+ cumulative training hours. FAA Diamond Award compliance requires meticulous documentation every year since 2002.",
+      "implication_for_calfus": "Maintenance management system with AI-driven predictive maintenance, parts forecasting, technician scheduling, and compliance documentation. Atlas is a distinct legal entity — its own ERP/ops engagement."
+    },
+
+    "digital_client_experience_gap": {
+      "severity": "MEDIUM",
+      "evidence": "Owner app confirmed via testimonial ('professionalism of the app in using it to schedule my own trips'). However: no owner portal described, no digital onboarding mentioned, booking still primarily via phone (1-866-214-1212) and email, no self-service trip management beyond basic scheduling. West Coast expansion = new owner acquisition requires scalable digital onboarding.",
+      "implication_for_calfus": "Modern owner-facing digital platform — enhanced mobile app, self-service portal, trip history, preference management, digital invoicing. Software engineering engagement."
+    },
+
+    "fleet_wide_upgrade_program_coordination": {
+      "severity": "MEDIUM",
+      "evidence": "Galley retrofit underway for all PC-24 jets in 2023-2024. Five improved performance PC-24s delivered in 2024. PC-12 NGX upgrades ongoing. Fleet-wide Gogo AVANCE L3 rollout completed 2023. These are fleet-wide simultaneous programs requiring coordinated maintenance downtime scheduling.",
+      "implication_for_calfus": "Fleet upgrade program management — sequencing, downtime optimization, client communication coordination."
+    },
+
+    "content_and_marketing_fragmentation": {
+      "severity": "LOW-MEDIUM",
+      "evidence": "HubSpot confirmed for marketing. WordPress for CMS. 400+ blog articles published over years. Three distinct program lines (fractional, CobaltPass, Sourcing Solution) each requiring tailored content and lead nurturing. Testimonials manually embedded in content pages.",
+      "implication_for_calfus": "AI-powered content personalization and lead scoring — Calfus Data & Intelligence layer on top of HubSpot."
+    }
+  },
+
+  "customer_pain_points_voiced": {
+    "top_objections_addressed_by_planesense": [
+      "Fractional cost vs. charter — 'Am I paying when the plane is empty?'",
+      "Availability guarantee — 'Will I actually get a plane when I need it?'",
+      "Hidden fees — 'What's the real all-in cost?'",
+      "Trust and safety — 'How do I know this operator is reliable?'",
+      "Jet card vs. fractional — 'Isn't a jet card simpler?'",
+      "Aircraft availability during holidays and peak seasons"
+    ],
+    "industry_wide_context": [
+      "Charter prices surged 21% since Q4 2020",
+      "Jet fuel was 149% higher in May 2022 vs. 2021",
+      "Total available private flights down 10% post-COVID supply crunch",
+      "Airline complaints at record highs — private aviation demand accelerating"
+    ]
+  }
+}

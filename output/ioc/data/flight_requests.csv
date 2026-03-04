@@ -1,0 +1,11 @@
+request_id,owner_id,owner_name,departure_icao,arrival_icao,requested_dep_time,pax_count,aircraft_preference,special_notes,status,created_at,priority
+RQ-001,PL-0042,Catherine Morris,KPSM,KMIA,2025-12-20 09:00,3,PC-12,,PENDING,2025-12-20 06:00,NORMAL
+RQ-002,PL-0117,Thomas Nelson,KBVU,KSFO,2025-12-20 10:30,2,PC-12,,PENDING,2025-12-20 06:00,NORMAL
+RQ-003,PL-0089,Sophia Ramirez,KPSM,KATL,2025-12-20 08:00,4,PC-24,"Owner prefers window seat, quiet cabin",PENDING,2025-12-20 06:00,HIGH
+RQ-004,PL-0205,Marcus Johnson,KBVU,KLAS,2025-12-20 11:00,1,PC-12,,PENDING,2025-12-20 06:00,NORMAL
+RQ-005,PL-0033,Eleanor Brooks,KPSM,KBOS,2025-12-20 13:00,2,PC-12,,PENDING,2025-12-20 06:00,NORMAL
+RQ-006,PL-0178,Phillip Chen,KBVU,KPHX,2025-12-20 09:30,3,PC-12,Medical equipment in cargo,PENDING,2025-12-20 06:00,NORMAL
+RQ-007,PL-0061,Margaret Walsh,KPSM,KTEB,2025-12-20 07:30,5,PC-24,"Holiday travel, 5 pax + luggage",PENDING,2025-12-20 06:00,HIGH
+RQ-008,PL-0290,Samuel Edwards,KBVU,KDEN,2025-12-20 14:00,2,PC-12,,PENDING,2025-12-20 06:00,NORMAL
+RQ-009,PL-0014,Richard Thornton,KPSM,EGLL,2025-12-20 16:00,2,PC-24,Jetfly segment: KPSM → EGLL → LSZH,PENDING,2025-12-20 06:00,HIGH
+RQ-010,PL-0155,Grace Patterson,KBVU,KSEA,2025-12-20 12:00,3,PC-24,"West Coast owner, new to fleet",PENDING,2025-12-20 06:00,NORMAL

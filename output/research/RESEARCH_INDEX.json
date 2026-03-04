@@ -1,0 +1,59 @@
+{
+  "project": "PlaneSense Business Development Research",
+  "objective": "Prepare for CXO-level meeting to identify AI/ERP/Software collaboration opportunities between Calfus and PlaneSense",
+  "calfus_context": {
+    "company": "Calfus Inc.",
+    "hq": "Silicon Valley",
+    "size": "100+ employees",
+    "positioning": "AI-first company",
+    "core_capabilities": [
+      "AI Agents & Products",
+      "ERP Agent Foundry (Oracle Cloud ERP)",
+      "AssistIQ - AI-powered ticket triage & resolution",
+      "Software Engineering & Product Development",
+      "Digital Transformation",
+      "Cloud Engineering",
+      "Data & Intelligence / Analytics",
+      "Legacy Data Conversion & Migration"
+    ]
+  },
+  "planesense_context": {
+    "company": "PlaneSense Inc.",
+    "hq": "Portsmouth, NH",
+    "founded": "~1995 (30th anniversary in 2025)",
+    "business": "Fractional jet ownership program",
+    "fleet": ["Pilatus PC-24 jet", "Pilatus PC-12 NGX turboprop"],
+    "programs": ["Fractional ownership shares", "CobaltPass jet card"],
+    "operations": "National coverage, 1000+ airports, Pilatus-exclusive fleet"
+  },
+  "research_files": {
+    "company": {
+      "company_overview.json": "19 pages - Homepage, Why PlaneSense, programs, contact, legal"
+    },
+    "fleet": {
+      "fleet_pc24_jet.json": "35 pages - PC-24 jet specs, features, articles",
+      "fleet_pc12_turboprop.json": "13 pages - PC-12 turboprop specs, articles",
+      "fleet_general.json": "3 pages - Fleet overview, tours, interactive graphics"
+    },
+    "content": {
+      "content_fractional_ownership.json": "29 pages - Core business model, how fractional works",
+      "content_comparisons_cost.json": "13 pages - Pricing, value props, vs charter/jet cards",
+      "content_general.json": "31 pages - Misc articles, company updates",
+      "content_news_awards_community.json": "22 pages - Awards, milestones, community involvement",
+      "content_people_guides.json": "21 pages - Customer stories, pilot training, safety, tips",
+      "content_destinations_travel.json": "19 pages - Destination guides, travel content",
+      "content_aircraft_fleet.json": "8 pages - Fleet-related blog articles"
+    }
+  },
+  "research_agenda": [
+    "1. Company & Business Model Understanding",
+    "2. Operational Pain Points & Inefficiencies",
+    "3. Technology Stack & Digital Maturity Assessment",
+    "4. Customer Experience Gaps",
+    "5. AI/Automation Opportunities",
+    "6. ERP & Data Management Needs",
+    "7. Competitive Positioning Insights",
+    "8. Hidden Opportunities PlaneSense May Not See",
+    "9. Calfus-PlaneSense Collaboration Mapping"
+  ]
+}

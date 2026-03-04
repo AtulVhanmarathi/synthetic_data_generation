@@ -1,0 +1,44 @@
+# Large reference datasets (downloadable from public sources)
+output/reference_data/N-CMAPSS_DS01-005.h5
+output/reference_data/nasr_airports/
+output/reference_data/ntsb/
+output/reference_data/archive.zip
+
+# Large raw scraped data (regenerable via scraper.py)
+output/data/all_pages.json
+output/data/content.json
+output/data/blog_posts.json
+output/data/pages.json
+output/data/fleet.json
+
+# Scraped images (copyright + size)
+output/images/
+
+# Generated data (regenerable via generate_*.py scripts)
+output/predictive_maintenance/data/
+output/analytics/data/
+output/churn/data/
+
+# Archive
+output/archive/
+
+# Claude Code local memory
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# macOS
+.DS_Store
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+*.env

@@ -1,0 +1,121 @@
+{
+  "report": "01 — Company Intelligence Brief",
+  "prepared_for": "Calfus CXO Meeting with PlaneSense",
+  "date": "2026-02-24",
+
+  "snapshot": {
+    "legal_name": "PlaneSense, Inc. (formerly Alpha Flying, Inc.)",
+    "founded": "1992 (Alpha Flying Club, Norwood MA); program launched September 9, 1995",
+    "hq": "115 Flightline Road, Portsmouth, NH 03801",
+    "secondary_facility": "Boulder City, NV (expanded 3x in 2024)",
+    "employees": "~600 (PlaneSense + Atlas Aircraft Center combined)",
+    "pilots": "240+",
+    "fleet_size": "60+ aircraft (PC-12 turboprops + PC-24 jets)",
+    "fleet_avg_age_years": 4.5,
+    "total_flight_hours_since_inception": "591,000+",
+    "annual_missions": "37,300+ (2021)",
+    "airports_served": "1,343 (2025)",
+    "client_retention_rate": "91%",
+    "annual_passengers": "62,400 (2025)",
+    "industry_position": "Second oldest fractional aircraft program in the world",
+    "30th_anniversary": "September 9, 2025"
+  },
+
+  "leadership_team": {
+    "george_antoniadis": "Founder, President & CEO — received Kenn Ricci Lifetime Aviation Entrepreneur Award, Feb 4, 2026",
+    "mandar_pendse": "Chief Information Officer (CIO) — KEY Calfus contact",
+    "jim_citro": "CFO & Treasurer — ERP/financial systems buyer",
+    "mike_baur": "VP, Business Development & Strategy — strategic partnerships owner",
+    "kevin_gordon": "VP, Flight Operations — operational systems owner",
+    "stephen_gould": "VP, General Counsel & Corporate Secretary",
+    "robyn_moses_harney": "VP, Human Resources",
+    "danielle_mcpheters": "Director, Account Services",
+    "todd_smith": "Director, Airworthiness"
+  },
+
+  "business_model": {
+    "core_concept": "Fractional jet ownership — clients purchase a share of an aircraft and gain access to the full fleet. PlaneSense manages all operations (crew, scheduling, maintenance, dispatch) on behalf of owners.",
+    "revenue_streams": [
+      "Fractional share purchase (asset sale — 1/16th to full ownership)",
+      "Monthly management fees (fixed, per share — covers pilot comp, training, insurance, maintenance)",
+      "Occupied hourly flight fees (variable — per flight hour only, no repositioning fees)",
+      "CobaltPass jet card sales (prepaid block: hourly + fuel + landing + FBO fees)",
+      "PlaneSense Sourcing Solution (managed access fees for flights beyond own fleet)",
+      "Atlas Aircraft Center MRO services (sister company, in-house maintenance)"
+    ],
+    "program_options": {
+      "fractional_ownership": "Core program — 50 hrs/year minimum, 5-7 year terms, no blackout dates, no peak pricing",
+      "cobaltpass": "25-hr jet card launched May 2025 — sold out by Feb 2026, 12-month commitment, 24/7 IOC access",
+      "sourcing_solution": "Launched Aug 2025 — access to flights beyond own fleet, nationally and internationally"
+    },
+    "pricing_structure": {
+      "transparency_claim": "All costs disclosed upfront. Owners pay only for occupied flight hours — no repositioning fees, no hidden charges",
+      "tax_advantage": "100% bonus depreciation on share purchase for business use — full purchase price deductible in year placed in service",
+      "fee_free_positioning": "No fuel surcharges, no de-icing fees, no FBO fees, no minimum flight times, no pet fees, no destination surcharges within Standard Billing Area"
+    }
+  },
+
+  "customer_segments": {
+    "business_executives": "C-suite, company owners, multi-site operators. 59% of private aviation users have companies under 500 employees (NBAA stat). Use cases: client meetings, multi-city tours, competitive time advantage, productivity, privacy",
+    "affluent_leisure": "Families, second-home owners, outdoor enthusiasts (golfers, hunters, fishermen, skiers), sporting event travelers",
+    "pet_travelers": "3,696 pets flew in 2021 (+21% vs. 2019) — actively marketed differentiator",
+    "international": "Nantucket, Bahamas, Bermuda, Caribbean, now Europe via Jetfly/CaptainJet",
+    "retention_depth": "91% retention; some families span 3 generations of PlaneSense ownership"
+  },
+
+  "fleet_details": {
+    "pc12_turboprop": {
+      "engine": "Single-engine turboprop (Pratt & Whitney Canada PT6A)",
+      "runway_minimum": "2,000 ft (grass, dirt, crushed coral capable)",
+      "positioning": "#1 most sought-after single-engine turboprop (BJT readers)",
+      "in_fleet_since": "1995"
+    },
+    "pc24_jet": {
+      "engine": "Twin-engine turbojet (Williams FJ44)",
+      "runway_minimum": "3,000 ft",
+      "positioning": "#2 light jet (BJT readers); world launch customer",
+      "in_fleet_since": "February 2018",
+      "latest_upgrade": "Extended payload and range — first improved unit delivered December 2023"
+    },
+    "fleet_philosophy": "Intentionally young fleet (avg 4.5 yrs). Exclusive Pilatus — no mixed-manufacturer fleet. All maintenance in-house via Atlas Aircraft Center."
+  },
+
+  "awards_and_recognition": {
+    "safety": [
+      "ARGUS Platinum Elite — one of only 5 U.S. aviation companies with this rating; held since 2016",
+      "IS-BAO (International Standard for Business Aircraft Operations) registered"
+    ],
+    "maintenance": [
+      "FAA Diamond Award for Excellence — every year since 2002",
+      "AEA Avionics Training Excellence Award — annually for many years"
+    ],
+    "customer_service": [
+      "BJT Annual Survey 2024: #1 in 5 of 6 categories including Overall Satisfaction (4.0/5), Peak Day Policies (4.0/5), Availability (4.0/5)",
+      "Professional Pilot Magazine: Flight Department of the Year (2019)"
+    ],
+    "leadership": "George Antoniadis — Kenn Ricci Lifetime Aviation Entrepreneur Award, Living Legends of Aviation, Feb 2026"
+  },
+
+  "strategic_partnerships": {
+    "jetfly": "Launched April 2025 — largest European fractional operator, 400+ European owners, 3,000+ European airports. Reciprocal hour sharing between PlaneSense and Jetfly fleets.",
+    "captainjet": "Launched December 2025 — luxury European charter access, 7,000+ aircraft network, Lausanne Switzerland",
+    "pilatus_aircraft": "OEM partner — PlaneSense world launch customer for PC-24; received 2,000th PC-12 built at ceremony in Stans, Switzerland (2023)",
+    "flightsafety_international": "Training partner — jointly developed MissionFit simulator training; full-motion simulator in Dallas TX",
+    "gozen_digital": "Web-based flight scheduling platform — contract extended October 2023; CEO signaled appetite to expand cooperation"
+  },
+
+  "confirmed_tech_stack": {
+    "hubspot": "Marketing CRM — portal ID 8835121, lead capture, content downloads, marketing automation",
+    "adp_workforce_now": "HR and recruitment management",
+    "wordpress": "Website CMS",
+    "gogo_avance_l3": "Fleet-wide in-flight Wi-Fi (PC-24 since 2018, PC-12 completed 2023)",
+    "gozen_operator": "Web-based flight scheduling platform (extended partnership 2023)",
+    "client_app": "Confirmed via testimonial — self-service scheduling for owners",
+    "notable_absences": [
+      "No ERP (Oracle, SAP, Workday) mentioned anywhere",
+      "No AI or machine learning mentioned anywhere",
+      "No data analytics or BI platform mentioned",
+      "No modern maintenance management system mentioned"
+    ]
+  }
+}

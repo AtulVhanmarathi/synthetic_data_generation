@@ -1,0 +1,11 @@
+owner_id,owner_name,share_type,tenure_years,utilization_rate,churn_risk,jetfly_access,cobalt_pass,vip_flag,preferred_aircraft
+PL-0042,Catherine Morris,1/8,7.2,0.74,MEDIUM,0,0,0,PC-12
+PL-0117,Thomas Nelson,1/16,3.1,0.88,LOW,0,0,0,PC-12
+PL-0089,Sophia Ramirez,1/4,12.4,0.96,LOW,0,0,1,PC-24
+PL-0205,Marcus Johnson,1/32,1.2,0.41,HIGH,0,0,0,PC-12
+PL-0033,Eleanor Brooks,1/16,5.8,0.72,MEDIUM,0,0,0,PC-12
+PL-0178,Phillip Chen,1/8,2.9,0.68,MEDIUM,0,0,0,PC-12
+PL-0061,Margaret Walsh,1/4,9.1,0.83,LOW,0,0,0,PC-24
+PL-0290,Samuel Edwards,1/16,0.8,0.55,MEDIUM,0,1,0,PC-12
+PL-0014,Richard Thornton,1/8,15.6,0.91,LOW,1,0,1,PC-24
+PL-0155,Grace Patterson,1/16,1.5,0.63,MEDIUM,0,0,0,PC-24

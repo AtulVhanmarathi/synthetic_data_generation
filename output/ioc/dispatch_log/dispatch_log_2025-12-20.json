@@ -1,0 +1,57 @@
+[
+  {
+    "request_id": "RQ-001",
+    "outcome": "DISPATCHED",
+    "tail": "N102AF",
+    "dep_time": "10:30"
+  },
+  {
+    "request_id": "RQ-002",
+    "outcome": "DISPATCHED",
+    "tail": "N135AF",
+    "dep_time": "10:30"
+  },
+  {
+    "request_id": "RQ-003",
+    "outcome": "ESCALATED",
+    "reason": "No PC-24-rated first officer available at PSM"
+  },
+  {
+    "request_id": "RQ-004",
+    "outcome": "DISPATCHED",
+    "tail": "N138AF",
+    "dep_time": "11:00"
+  },
+  {
+    "request_id": "RQ-005",
+    "outcome": "DISPATCHED",
+    "tail": "N103AF",
+    "dep_time": "15:00"
+  },
+  {
+    "request_id": "RQ-006",
+    "outcome": "DISPATCHED",
+    "tail": "N143AF",
+    "dep_time": "09:30"
+  },
+  {
+    "request_id": "RQ-007",
+    "outcome": "ESCALATED",
+    "reason": "No PC-24-rated first officer available at PSM"
+  },
+  {
+    "request_id": "RQ-008",
+    "outcome": "ESCALATED",
+    "reason": "No dispatch-safe PC-12 aircraft available at BVU base"
+  },
+  {
+    "request_id": "RQ-009",
+    "outcome": "ESCALATED",
+    "reason": "No PC-24-rated first officer available at PSM"
+  },
+  {
+    "request_id": "RQ-010",
+    "outcome": "ESCALATED",
+    "reason": "No PC-24-rated first officer available at BVU"
+  }
+]
