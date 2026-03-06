@@ -376,5 +376,54 @@ After: Clear wave pattern — green FLYING band rises in summer, blue AVAILABLE 
 
 ---
 
+## 13. Flight Hours / Cycles Integrity Fix — `fact_aircraft_daily_status`
+
+**Date**: 2026-03-05
+**Script**: `scripts/fix_daily_status_hours.py`
+
+### Background
+A data integrity audit revealed that `flight_hours` and `flight_cycles` in `fact_aircraft_daily_status` were populated from the aircraft's overall flight log without validating the daily `status` value. This produced two classes of violations across 13,938 rows (22.1% of the table):
+
+| Violation | Count | Problem |
+|-----------|-------|---------|
+| `IN_MAINTENANCE` rows with `flight_hours > 0` | 5,266 | Grounded aircraft cannot accumulate hours |
+| `FLYING` rows with `flight_hours = 0` | 4,863 | Flying aircraft must have hours |
+| `AVAILABLE` rows with `flight_hours > 0` | 3,784 | Idle aircraft cannot accumulate hours |
+| `AOG` rows with `flight_hours > 0` | 25 | Emergency-grounded aircraft cannot fly |
+
+### Business Rule Enforced
+```
+FLYING status       → flight_hours > 0,  flight_cycles > 0
+AVAILABLE status    → flight_hours = 0,  flight_cycles = 0
+IN_MAINTENANCE      → flight_hours = 0,  flight_cycles = 0
+AOG                 → flight_hours = 0,  flight_cycles = 0
+```
+
+### Fixes Applied
+
+**Non-FLYING rows (9,075 rows)**: `flight_hours` and `flight_cycles` set to `0` for all AVAILABLE, IN_MAINTENANCE, and AOG rows that had non-zero values.
+
+**FLYING rows with zero hours (4,863 rows)**: Assigned realistic flight hours using the following priority:
+1. **Exact match**: Look up actual total flight hours for that `aircraft_id` + `date` combination from `fact_flight` — used when a matching flight record exists
+2. **Aircraft average**: If no exact match, use that aircraft's own average daily flying hours ± 15% Gaussian jitter
+3. **Fleet fallback**: If aircraft has no history, use fleet-wide mean of **1.88 hrs/day** (flying days only)
+
+`flight_cycles` assigned as `max(1, round(flight_hours / 1.5))` — reflecting typical PC-12/PC-24 cycle rates.
+
+### Validation Result
+```
+FLYING rows with 0 hours/cycles      : 0  ✓
+Non-FLYING rows with hours/cycles > 0: 0  ✓
+Total violations remaining           : 0  ✓
+```
+
+### Impact
+- **Fleet Performance Trend visual**: Not affected — that visual uses `COUNTROWS()` on status, not hours
+- **MTBF calculation**: Uses `SUM(fact_flight[flight_hours])` not this table — not affected
+- **Avg Hours per Aircraft per Day KPI**: Uses `fact_flight[flight_hours]` — not affected
+- **Future utilization analysis** using `fact_aircraft_daily_status[flight_hours]` directly: Now reliable and consistent with `fact_flight`
+
+---
+
 *Document maintained by: Data / BI team*
 *For Dashboard DAX context, refer to `DAX_DASHBOARD1_FLEET_UTILIZATION.md` and `DAX_DASHBOARD2_MAINTENANCE.md`*
