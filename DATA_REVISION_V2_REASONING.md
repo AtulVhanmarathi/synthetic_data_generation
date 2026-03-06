@@ -232,5 +232,149 @@ Running `regenerate_routes_v2.py` multiple times appended new `owner_type` colum
 
 ---
 
+## 9. Maintenance Cost Realism Fixes — `fact_maintenance_detail`
+
+**Date**: 2026-03-05
+**Script**: `scripts/fix_maintenance_cost_ratio.py`
+
+### Background
+A review of `fact_maintenance_detail` revealed that labor cost consistently exceeded parts cost across all 36 months. For turboprop aircraft (PC-12 NGX, PC-24), parts are the dominant cost driver — engine overhauls, propeller replacements, landing gear components can each run $50K–$200K per event. The original synthetic generation used a flat labor-heavy cost model with no seasonal variation.
+
+### Changes Made
+
+**Seasonal BOOST — March and October (all 3 years):**
+- March and October represent heavy inspection seasons (pre-summer prep and pre-winter checks)
+- Parts cost boosted to **1.40x labor** using per-month multipliers applied to `unit_cost` and `extended_cost` on all PARTS rows
+- 6 months affected: 2023-03, 2023-10, 2024-03, 2024-10, 2025-03, 2025-10
+
+**REVERT — Jan-2023, Jul-2023, Dec-2023:**
+- These 3 months were accidental outliers where parts already exceeded labor due to random generation
+- Reverted to **0.70x parts/labor ratio** to ensure only March and October show parts-dominant months
+- Applied per-month multipliers to avoid the aggregate-level undercorrection that affected Jan-2023 specifically
+
+**Result**: Parts exceed labor in exactly 6 months per year cycle (March + October), with all other months showing labor-dominant costs (0.46x–0.90x ratio).
+
+| Column modified | Table | Change |
+|----------------|-------|--------|
+| `unit_cost` | `fact_maintenance_detail` | Scaled per multiplier for target months |
+| `extended_cost` | `fact_maintenance_detail` | Scaled per multiplier for target months |
+
+---
+
+## 10. AOG Cost Realism Fixes — `fact_maintenance_detail`
+
+**Date**: 2026-03-05
+**Script**: `scripts/fix_aog_costs.py`
+
+### Background
+`fact_aircraft_daily_status` records 19 months with AOG events, but most of those months showed flat or labor-dominant costs in `fact_maintenance_detail`. AOG events (Aircraft on Ground — unscheduled emergency grounding) should produce the highest maintenance costs of any event type: emergency parts procurement carries a 1.8x–2.4x premium over standard pricing, and emergency overtime labor inflates labor costs too.
+
+Additionally, all `AOG_REPAIR` action-type rows in `fact_maintenance_detail` had `PARTS = $0` — structurally incorrect since AOG repairs always involve replacing a failed component.
+
+### Changes Made
+
+**Top 3 AOG-heavy months boosted:**
+
+| Month | AOG Days | Labor change | Parts change | Final ratio |
+|-------|---------|-------------|-------------|-------------|
+| 2023-05 | 6 days | × 1.25 (emergency overtime) | scaled to 1.40x labor | 1.40x ✓ |
+| 2023-06 | 5 days | × 1.25 | scaled to 1.40x labor | 1.40x ✓ |
+| 2024-05 | 12 days | × 1.25 | scaled to 1.40x labor | 1.40x ✓ |
+
+**AOG_REPAIR parts cost**: All 18 AOG_REPAIR maintenance jobs already had PARTS rows which were correctly scaled by the boost multipliers above. Each job now shows realistic parts/labor ratios (parts $4K–$170K per job vs labor $9K–$10K).
+
+---
+
+## 11. AOG Event Consolidation — `fact_aircraft_daily_status` and `fact_maintenance_detail`
+
+**Date**: 2026-03-05
+**Script**: `scripts/consolidate_aog.py`
+
+### Background
+AOG events were scattered across 19 different months inconsistently (e.g., Jan, Apr, Jun, Aug, Nov). For a realistic and analytically meaningful dataset, AOG events should follow a seasonal pattern aligned with:
+- **March**: Heavy pre-summer inspection events discovering issues
+- **May**: Peak season start — aircraft pushed harder → highest AOG incidence
+- **October**: Pre-winter checks uncovering failures
+
+### Changes to `fact_aircraft_daily_status`
+
+**Removed AOG from 12 non-target months** (converted to AVAILABLE):
+2023-01(2), 2023-04(4), 2023-06(5), 2023-08(2), 2024-04(5), 2024-09(3), 2024-11(3), 2025-01(2), 2025-02(2), 2025-04(1), 2025-08(2), 2025-11(2)
+
+**Set consistent AOG day counts in target months** (per year):
+
+| Month | Target AOG days | Rationale |
+|-------|----------------|-----------|
+| March | 6 days | Heavy inspection season — findings ground aircraft |
+| May | 8 days | Peak demand stress — highest failure rate |
+| October | 6 days | Pre-winter checks — second highest grounding event |
+
+**2024-05 trimmed**: Was 12 AOG days, reduced to 8 to match consistent target.
+
+### Changes to `fact_maintenance_detail`
+**2025-05** was not previously boosted — added as a new AOG boost month:
+- Labor × 1.25 (emergency overtime): 342 rows → $990,841 total labor
+- Parts scaled to 1.40x labor: 42 rows → $1,387,178 total parts
+- Ratio: 1.40x ✓
+
+### Final AOG State (all years verified)
+
+| Month | 2023 | 2024 | 2025 |
+|-------|------|------|------|
+| March | 6 ✓ | 6 ✓ | 6 ✓ |
+| May | 8 ✓ | 8 ✓ | 8 ✓ |
+| October | 6 ✓ | 6 ✓ | 6 ✓ |
+| All others | 0 | 0 | 0 |
+
+---
+
+## 12. Fleet Status Seasonality + Date Format Fix — `fact_aircraft_daily_status`
+
+**Date**: 2026-03-05
+**Script**: `scripts/fix_fleet_status_seasonality.py`
+
+### Background
+Two issues identified in `fact_aircraft_daily_status`:
+
+1. **No seasonal pattern in FLYING/AVAILABLE status**: FLYING% ranged only from 80.7%–90.5% with no consistent seasonal curve. Winter and summer months looked nearly identical in the Fleet Performance Trend visualization — producing flat, horizontal stacked area bands.
+
+2. **Date format inconsistency**: All 63,080 dates were stored in `M/D/YY` format (e.g., `1/21/25`) instead of `YYYY-MM-DD`. This prevented Power BI from correctly establishing the relationship with `dim_date` and caused date parsing failures.
+
+### Changes Made
+
+**Date normalization**: All 63,080 date values reformatted from `M/D/YY` → `YYYY-MM-DD`. This is a prerequisite for the `dim_date` relationship to work correctly in Power BI.
+
+**Seasonal FLYING/AVAILABLE/IN_MAINTENANCE targets applied per month:**
+
+| Month | FLYING% | AVAILABLE% | IN_MAINT% | Rationale |
+|-------|---------|-----------|----------|-----------|
+| Dec, Jan, Feb | 78% | ~14% | 8% | Winter — low owner demand, aircraft idle |
+| Mar | 84% | ~2% | **14%** | Heavy inspection season + AOG events |
+| Apr | 85% | ~7% | 8% | Spring demand building |
+| May | 85% | ~3% | **12%** | AOG-heavy month + elevated maintenance |
+| Jun, Jul, Aug | **90%** | ~3% | 7% | Summer peak — all aircraft in service |
+| Sep | 85% | ~7% | 8% | Fall demand tapering |
+| Oct | 84% | ~2% | **14%** | Heavy pre-winter inspection + AOG events |
+| Nov | 82% | ~9% | 9% | Fall into winter transition |
+
+**Key seasonal swings now visible in the visualization:**
+- FLYING band: 78% (winter) → 90% (summer) — **12 percentage point swing**
+- AVAILABLE band: 14% (winter) → 3% (summer) — **inverse of FLYING**
+- IN_MAINTENANCE band: visibly thicker in March and October (**14%** vs 7–8% baseline)
+- AOG: preserved exactly (6/8/6 days in Mar/May/Oct per year)
+
+**Method**: Non-AOG rows within each month were shuffled and reassigned to FLYING, IN_MAINTENANCE, or AVAILABLE in proportion to monthly targets. AOG rows were never touched.
+
+### Impact on Fleet Performance Trend Visualization
+Before: Flat horizontal bands — no visible seasonal differentiation, especially in 2025.
+After: Clear wave pattern — green FLYING band rises in summer, blue AVAILABLE band thickens in winter, amber IN_MAINTENANCE band spikes in March and October each year.
+
+### Files Modified
+| File | Change |
+|------|--------|
+| `fact_aircraft_daily_status.csv` | All 63,080 dates normalized; status redistributed seasonally |
+
+---
+
 *Document maintained by: Data / BI team*
 *For Dashboard DAX context, refer to `DAX_DASHBOARD1_FLEET_UTILIZATION.md` and `DAX_DASHBOARD2_MAINTENANCE.md`*
