@@ -82,45 +82,45 @@ JASC_CODES = [
 # Airports — PlaneSense heavy Northeast + West Coast, plus top GA airports
 AIRPORTS = [
     # Northeast (primary market)
-    {"icao": "KPSM", "name": "Portsmouth Intl", "city": "Portsmouth", "state": "NH", "region": "Northeast", "runway_ft": 11321, "surface": "ASPH"},
-    {"icao": "KBOS", "name": "Boston Logan", "city": "Boston", "state": "MA", "region": "Northeast", "runway_ft": 10083, "surface": "ASPH"},
-    {"icao": "KJFK", "name": "John F Kennedy", "city": "New York", "state": "NY", "region": "Northeast", "runway_ft": 14511, "surface": "ASPH"},
-    {"icao": "KEWR", "name": "Newark Liberty", "city": "Newark", "state": "NJ", "region": "Northeast", "runway_ft": 11000, "surface": "ASPH"},
-    {"icao": "KPVD", "name": "T.F. Green", "city": "Providence", "state": "RI", "region": "Northeast", "runway_ft": 7166, "surface": "ASPH"},
-    {"icao": "KBDL", "name": "Bradley Intl", "city": "Hartford", "state": "CT", "region": "Northeast", "runway_ft": 9510, "surface": "ASPH"},
-    {"icao": "KPWM", "name": "Portland Jetport", "city": "Portland", "state": "ME", "region": "Northeast", "runway_ft": 7200, "surface": "ASPH"},
-    {"icao": "KMHT", "name": "Manchester-Boston", "city": "Manchester", "state": "NH", "region": "Northeast", "runway_ft": 9250, "surface": "ASPH"},
-    {"icao": "KACK", "name": "Nantucket Memorial", "city": "Nantucket", "state": "MA", "region": "Northeast", "runway_ft": 6303, "surface": "ASPH"},
-    {"icao": "KMVY", "name": "Martha's Vineyard", "city": "Vineyard Haven", "state": "MA", "region": "Northeast", "runway_ft": 5504, "surface": "ASPH"},
-    {"icao": "KHPN", "name": "Westchester County", "city": "White Plains", "state": "NY", "region": "Northeast", "runway_ft": 6549, "surface": "ASPH"},
-    {"icao": "KTEB", "name": "Teterboro", "city": "Teterboro", "state": "NJ", "region": "Northeast", "runway_ft": 7000, "surface": "ASPH"},
-    {"icao": "KBED", "name": "Hanscom Field", "city": "Bedford", "state": "MA", "region": "Northeast", "runway_ft": 7011, "surface": "ASPH"},
+    {"icao": "KPSM", "name": "Portsmouth Intl",       "city": "Portsmouth",      "state": "NH", "region": "Northeast",    "runway_ft": 11321, "surface": "ASPH",      "lat": 43.0779, "lon": -70.8233},
+    {"icao": "KBOS", "name": "Boston Logan",           "city": "Boston",          "state": "MA", "region": "Northeast",    "runway_ft": 10083, "surface": "ASPH",      "lat": 42.3643, "lon": -71.0052},
+    {"icao": "KJFK", "name": "John F Kennedy",         "city": "New York",        "state": "NY", "region": "Northeast",    "runway_ft": 14511, "surface": "ASPH",      "lat": 40.6413, "lon": -73.7781},
+    {"icao": "KEWR", "name": "Newark Liberty",         "city": "Newark",          "state": "NJ", "region": "Northeast",    "runway_ft": 11000, "surface": "ASPH",      "lat": 40.6895, "lon": -74.1745},
+    {"icao": "KPVD", "name": "T.F. Green",             "city": "Providence",      "state": "RI", "region": "Northeast",    "runway_ft":  7166, "surface": "ASPH",      "lat": 41.7243, "lon": -71.4282},
+    {"icao": "KBDL", "name": "Bradley Intl",           "city": "Hartford",        "state": "CT", "region": "Northeast",    "runway_ft":  9510, "surface": "ASPH",      "lat": 41.9388, "lon": -72.6832},
+    {"icao": "KPWM", "name": "Portland Jetport",       "city": "Portland",        "state": "ME", "region": "Northeast",    "runway_ft":  7200, "surface": "ASPH",      "lat": 43.6462, "lon": -70.3093},
+    {"icao": "KMHT", "name": "Manchester-Boston",      "city": "Manchester",      "state": "NH", "region": "Northeast",    "runway_ft":  9250, "surface": "ASPH",      "lat": 42.9326, "lon": -71.4357},
+    {"icao": "KACK", "name": "Nantucket Memorial",     "city": "Nantucket",       "state": "MA", "region": "Northeast",    "runway_ft":  6303, "surface": "ASPH",      "lat": 41.2531, "lon": -70.0602},
+    {"icao": "KMVY", "name": "Martha's Vineyard",      "city": "Vineyard Haven",  "state": "MA", "region": "Northeast",    "runway_ft":  5504, "surface": "ASPH",      "lat": 41.3931, "lon": -70.6154},
+    {"icao": "KHPN", "name": "Westchester County",     "city": "White Plains",    "state": "NY", "region": "Northeast",    "runway_ft":  6549, "surface": "ASPH",      "lat": 41.0670, "lon": -73.7076},
+    {"icao": "KTEB", "name": "Teterboro",              "city": "Teterboro",       "state": "NJ", "region": "Northeast",    "runway_ft":  7000, "surface": "ASPH",      "lat": 40.8501, "lon": -74.0608},
+    {"icao": "KBED", "name": "Hanscom Field",          "city": "Bedford",         "state": "MA", "region": "Northeast",    "runway_ft":  7011, "surface": "ASPH",      "lat": 42.4700, "lon": -71.2890},
     # Mid-Atlantic
-    {"icao": "KIAD", "name": "Dulles Intl", "city": "Washington", "state": "VA", "region": "Mid-Atlantic", "runway_ft": 11500, "surface": "CONC"},
-    {"icao": "KPHL", "name": "Philadelphia Intl", "city": "Philadelphia", "state": "PA", "region": "Mid-Atlantic", "runway_ft": 10506, "surface": "ASPH"},
+    {"icao": "KIAD", "name": "Dulles Intl",            "city": "Washington",      "state": "VA", "region": "Mid-Atlantic", "runway_ft": 11500, "surface": "CONC",      "lat": 38.9531, "lon": -77.4565},
+    {"icao": "KPHL", "name": "Philadelphia Intl",      "city": "Philadelphia",    "state": "PA", "region": "Mid-Atlantic", "runway_ft": 10506, "surface": "ASPH",      "lat": 39.8721, "lon": -75.2411},
     # Southeast
-    {"icao": "KMIA", "name": "Miami Intl", "city": "Miami", "state": "FL", "region": "Southeast", "runway_ft": 13016, "surface": "ASPH"},
-    {"icao": "KPBI", "name": "Palm Beach Intl", "city": "West Palm Beach", "state": "FL", "region": "Southeast", "runway_ft": 10008, "surface": "ASPH"},
-    {"icao": "KTPA", "name": "Tampa Intl", "city": "Tampa", "state": "FL", "region": "Southeast", "runway_ft": 11002, "surface": "ASPH"},
-    {"icao": "KATL", "name": "Hartsfield-Jackson", "city": "Atlanta", "state": "GA", "region": "Southeast", "runway_ft": 12390, "surface": "CONC"},
-    {"icao": "KCLT", "name": "Charlotte Douglas", "city": "Charlotte", "state": "NC", "region": "Southeast", "runway_ft": 10000, "surface": "ASPH"},
-    {"icao": "KFLL", "name": "Fort Lauderdale", "city": "Fort Lauderdale", "state": "FL", "region": "Southeast", "runway_ft": 9000, "surface": "ASPH"},
-    # West Coast (expanding market)
-    {"icao": "KBVU", "name": "Boulder City Municipal", "city": "Boulder City", "state": "NV", "region": "West", "runway_ft": 4800, "surface": "ASPH"},
-    {"icao": "KLAX", "name": "Los Angeles Intl", "city": "Los Angeles", "state": "CA", "region": "West", "runway_ft": 12091, "surface": "ASPH-CONC"},
-    {"icao": "KSFO", "name": "San Francisco Intl", "city": "San Francisco", "state": "CA", "region": "West", "runway_ft": 11870, "surface": "ASPH"},
-    {"icao": "KSAN", "name": "San Diego Intl", "city": "San Diego", "state": "CA", "region": "West", "runway_ft": 9401, "surface": "ASPH"},
-    {"icao": "KLAS", "name": "Harry Reid Intl", "city": "Las Vegas", "state": "NV", "region": "West", "runway_ft": 14510, "surface": "ASPH"},
-    {"icao": "KDEN", "name": "Denver Intl", "city": "Denver", "state": "CO", "region": "West", "runway_ft": 16000, "surface": "CONC"},
-    {"icao": "KSDM", "name": "Brown Field", "city": "San Diego", "state": "CA", "region": "West", "runway_ft": 7972, "surface": "ASPH"},
-    {"icao": "KAPC", "name": "Napa County", "city": "Napa", "state": "CA", "region": "West", "runway_ft": 5931, "surface": "ASPH"},
+    {"icao": "KMIA", "name": "Miami Intl",             "city": "Miami",           "state": "FL", "region": "Southeast",    "runway_ft": 13016, "surface": "ASPH",      "lat": 25.7959, "lon": -80.2870},
+    {"icao": "KPBI", "name": "Palm Beach Intl",        "city": "West Palm Beach", "state": "FL", "region": "Southeast",    "runway_ft": 10008, "surface": "ASPH",      "lat": 26.6832, "lon": -80.0956},
+    {"icao": "KTPA", "name": "Tampa Intl",             "city": "Tampa",           "state": "FL", "region": "Southeast",    "runway_ft": 11002, "surface": "ASPH",      "lat": 27.9755, "lon": -82.5332},
+    {"icao": "KATL", "name": "Hartsfield-Jackson",     "city": "Atlanta",         "state": "GA", "region": "Southeast",    "runway_ft": 12390, "surface": "CONC",      "lat": 33.6407, "lon": -84.4277},
+    {"icao": "KCLT", "name": "Charlotte Douglas",      "city": "Charlotte",       "state": "NC", "region": "Southeast",    "runway_ft": 10000, "surface": "ASPH",      "lat": 35.2140, "lon": -80.9431},
+    {"icao": "KFLL", "name": "Fort Lauderdale",        "city": "Fort Lauderdale", "state": "FL", "region": "Southeast",    "runway_ft":  9000, "surface": "ASPH",      "lat": 26.0726, "lon": -80.1527},
+    # West (expanding market)
+    {"icao": "KBVU", "name": "Boulder City Municipal", "city": "Boulder City",    "state": "NV", "region": "West",         "runway_ft":  4800, "surface": "ASPH",      "lat": 35.9474, "lon": -114.8609},
+    {"icao": "KLAX", "name": "Los Angeles Intl",       "city": "Los Angeles",     "state": "CA", "region": "West",         "runway_ft": 12091, "surface": "ASPH-CONC", "lat": 33.9425, "lon": -118.4081},
+    {"icao": "KSFO", "name": "San Francisco Intl",     "city": "San Francisco",   "state": "CA", "region": "West",         "runway_ft": 11870, "surface": "ASPH",      "lat": 37.6213, "lon": -122.3790},
+    {"icao": "KSAN", "name": "San Diego Intl",         "city": "San Diego",       "state": "CA", "region": "West",         "runway_ft":  9401, "surface": "ASPH",      "lat": 32.7338, "lon": -117.1933},
+    {"icao": "KLAS", "name": "Harry Reid Intl",        "city": "Las Vegas",       "state": "NV", "region": "West",         "runway_ft": 14510, "surface": "ASPH",      "lat": 36.0840, "lon": -115.1537},
+    {"icao": "KDEN", "name": "Denver Intl",            "city": "Denver",          "state": "CO", "region": "West",         "runway_ft": 16000, "surface": "CONC",      "lat": 39.8561, "lon": -104.6737},
+    {"icao": "KSDM", "name": "Brown Field",            "city": "San Diego",       "state": "CA", "region": "West",         "runway_ft":  7972, "surface": "ASPH",      "lat": 32.5723, "lon": -116.9800},
+    {"icao": "KAPC", "name": "Napa County",            "city": "Napa",            "state": "CA", "region": "West",         "runway_ft":  5931, "surface": "ASPH",      "lat": 38.2132, "lon": -122.2807},
     # Midwest
-    {"icao": "KORD", "name": "O'Hare Intl", "city": "Chicago", "state": "IL", "region": "Midwest", "runway_ft": 13000, "surface": "CONC"},
-    {"icao": "KMSP", "name": "Minneapolis-St Paul", "city": "Minneapolis", "state": "MN", "region": "Midwest", "runway_ft": 11006, "surface": "CONC"},
+    {"icao": "KORD", "name": "O'Hare Intl",            "city": "Chicago",         "state": "IL", "region": "Midwest",      "runway_ft": 13000, "surface": "CONC",      "lat": 41.9742, "lon":  -87.9073},
+    {"icao": "KMSP", "name": "Minneapolis-St Paul",    "city": "Minneapolis",     "state": "MN", "region": "Midwest",      "runway_ft": 11006, "surface": "CONC",      "lat": 44.8820, "lon":  -93.2218},
     # Short-strip PC-12-only airports (competitive advantage)
-    {"icao": "2B2", "name": "Plum Island", "city": "Newburyport", "state": "MA", "region": "Northeast", "runway_ft": 2700, "surface": "ASPH"},
-    {"icao": "K1B1", "name": "Hudson", "city": "Hudson", "state": "NY", "region": "Northeast", "runway_ft": 3600, "surface": "ASPH"},
-    {"icao": "KSFM", "name": "Sanford Seacoast", "city": "Sanford", "state": "ME", "region": "Northeast", "runway_ft": 5200, "surface": "ASPH"},
+    {"icao": "2B2",  "name": "Plum Island",            "city": "Newburyport",     "state": "MA", "region": "Northeast",    "runway_ft":  2700, "surface": "ASPH",      "lat": 42.7608, "lon":  -70.8394},
+    {"icao": "K1B1", "name": "Hudson",                 "city": "Hudson",          "state": "NY", "region": "Northeast",    "runway_ft":  3600, "surface": "ASPH",      "lat": 42.2973, "lon":  -73.7120},
+    {"icao": "KSFM", "name": "Sanford Seacoast",       "city": "Sanford",         "state": "ME", "region": "Northeast",    "runway_ft":  5200, "surface": "ASPH",      "lat": 43.3938, "lon":  -70.7080},
 ]
 
 # Route weights: Northeast-heavy, seasonal Florida
@@ -281,6 +281,8 @@ def gen_dim_airport():
             "runway_surface": a["surface"],
             "pc12_accessible": 1,
             "pc24_accessible": 1 if a["runway_ft"] >= 3810 else 0,  # PC-24 needs ~3,810 ft
+            "latitude": a["lat"],
+            "longitude": a["lon"],
         })
     fields = list(rows[0].keys())
     write_csv("dim_airport.csv", rows, fields)
